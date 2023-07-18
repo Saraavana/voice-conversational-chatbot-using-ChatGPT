@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D5BCAC1560E3295DF8F1731 /* Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463F5B4DB14790EA8B67D9EB /* Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework */; };
+		442CF0482A5FF01800124AE8 /* Rammy_Virtual_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CF0472A5FF01800124AE8 /* Rammy_Virtual_AssistantApp.swift */; };
+		442CF04A2A5FF01800124AE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CF0492A5FF01800124AE8 /* ContentView.swift */; };
+		442CF04C2A5FF01B00124AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442CF04B2A5FF01B00124AE8 /* Assets.xcassets */; };
+		442CF04F2A5FF01B00124AE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442CF04E2A5FF01B00124AE8 /* Preview Assets.xcassets */; };
+		442CF0752A5FFEA500124AE8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CF0742A5FFEA500124AE8 /* OpenAIService.swift */; };
+		44380DF82A600D82002BB88F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 44380DF72A600D82002BB88F /* Alamofire */; };
+		449C0E752A6002E300DE84CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C0E742A6002E300DE84CC /* Constants.swift */; };
+		449C0E772A6004C900DE84CC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C0E762A6004C900DE84CC /* ChatView.swift */; };
+		44A09C2B2A602F5D00A46D74 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A09C2A2A602F5D00A46D74 /* HistoryView.swift */; };
+		44A09C2D2A60302A00A46D74 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A09C2C2A60302A00A46D74 /* Conversation.swift */; };
+		44A09C2F2A60738E00A46D74 /* Synthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A09C2E2A60738E00A46D74 /* Synthesizer.swift */; };
+		44A09C312A6073B600A46D74 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A09C302A6073B600A46D74 /* SpeechRecognizer.swift */; };
+		731649963E81D0C6703F69FD /* Pods_Rammy_Virtual_AssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C002B887D2C8957F44CF780B /* Pods_Rammy_Virtual_AssistantTests.framework */; };
+		EE7280EBF79B9368189391E0 /* Pods_Rammy_Virtual_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFB27D8AB90887B0FCC7C7D /* Pods_Rammy_Virtual_Assistant.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		442CF0552A5FF01B00124AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442CF03C2A5FF01800124AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442CF0432A5FF01800124AE8;
+			remoteInfo = "Rammy Virtual Assistant";
+		};
+		442CF05F2A5FF01B00124AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442CF03C2A5FF01800124AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442CF0432A5FF01800124AE8;
+			remoteInfo = "Rammy Virtual Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3A6708F3A18824FD53A086 /* Pods-Rammy Virtual AssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual AssistantTests.release.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual AssistantTests/Pods-Rammy Virtual AssistantTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CFB27D8AB90887B0FCC7C7D /* Pods_Rammy_Virtual_Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rammy_Virtual_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		442CF0442A5FF01800124AE8 /* Rammy Virtual Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rammy Virtual Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		442CF0472A5FF01800124AE8 /* Rammy_Virtual_AssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rammy_Virtual_AssistantApp.swift; sourceTree = "<group>"; };
+		442CF0492A5FF01800124AE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		442CF04B2A5FF01B00124AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442CF04E2A5FF01B00124AE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		442CF0542A5FF01B00124AE8 /* Rammy Virtual AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rammy Virtual AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		442CF05E2A5FF01B00124AE8 /* Rammy Virtual AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rammy Virtual AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		442CF0742A5FFEA500124AE8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		449C0E742A6002E300DE84CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		449C0E762A6004C900DE84CC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		44A09C2A2A602F5D00A46D74 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		44A09C2C2A60302A00A46D74 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		44A09C2E2A60738E00A46D74 /* Synthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synthesizer.swift; sourceTree = "<group>"; };
+		44A09C302A6073B600A46D74 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		463F5B4DB14790EA8B67D9EB /* Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7802749079DDFDFBDD0EEFAC /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		883F2028A55E8FDC37AC32DC /* Pods-Rammy Virtual Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual Assistant.debug.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual Assistant/Pods-Rammy Virtual Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		C002B887D2C8957F44CF780B /* Pods_Rammy_Virtual_AssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rammy_Virtual_AssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9E6FFE62706470CA722B33 /* Pods-Rammy Virtual Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual Assistant.release.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual Assistant/Pods-Rammy Virtual Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		DCA85C0FCF0DC98A1E593143 /* Pods-Rammy Virtual AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual AssistantTests.debug.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual AssistantTests/Pods-Rammy Virtual AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CFCABBF91D97A1000B05ED /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.release.xcconfig"; path = "Target Support Files/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442CF0412A5FF01800124AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7280EBF79B9368189391E0 /* Pods_Rammy_Virtual_Assistant.framework in Frameworks */,
+				44380DF82A600D82002BB88F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF0512A5FF01B00124AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731649963E81D0C6703F69FD /* Pods_Rammy_Virtual_AssistantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF05B2A5FF01B00124AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5BCAC1560E3295DF8F1731 /* Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442CF03B2A5FF01800124AE8 = {
+			isa = PBXGroup;
+			children = (
+				442CF0462A5FF01800124AE8 /* Rammy Virtual Assistant */,
+				442CF0452A5FF01800124AE8 /* Products */,
+				A8DA712E16AC119D23557707 /* Pods */,
+				DCC8FFE8E6EFC40AB4DF5168 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		442CF0452A5FF01800124AE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442CF0442A5FF01800124AE8 /* Rammy Virtual Assistant.app */,
+				442CF0542A5FF01B00124AE8 /* Rammy Virtual AssistantTests.xctest */,
+				442CF05E2A5FF01B00124AE8 /* Rammy Virtual AssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442CF0462A5FF01800124AE8 /* Rammy Virtual Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				442CF0472A5FF01800124AE8 /* Rammy_Virtual_AssistantApp.swift */,
+				442CF0712A5FF27700124AE8 /* View */,
+				442CF04B2A5FF01B00124AE8 /* Assets.xcassets */,
+				442CF0732A5FF2A000124AE8 /* Model */,
+				442CF0722A5FF29000124AE8 /* ViewModel */,
+				442CF04D2A5FF01B00124AE8 /* Preview Content */,
+			);
+			path = "Rammy Virtual Assistant";
+			sourceTree = "<group>";
+		};
+		442CF04D2A5FF01B00124AE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				442CF04E2A5FF01B00124AE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		442CF0712A5FF27700124AE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				442CF0492A5FF01800124AE8 /* ContentView.swift */,
+				449C0E762A6004C900DE84CC /* ChatView.swift */,
+				44A09C2A2A602F5D00A46D74 /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		442CF0722A5FF29000124AE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				442CF0742A5FFEA500124AE8 /* OpenAIService.swift */,
+				449C0E742A6002E300DE84CC /* Constants.swift */,
+				44A09C2C2A60302A00A46D74 /* Conversation.swift */,
+				44A09C2E2A60738E00A46D74 /* Synthesizer.swift */,
+				44A09C302A6073B600A46D74 /* SpeechRecognizer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		442CF0732A5FF2A000124AE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8DA712E16AC119D23557707 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				883F2028A55E8FDC37AC32DC /* Pods-Rammy Virtual Assistant.debug.xcconfig */,
+				CC9E6FFE62706470CA722B33 /* Pods-Rammy Virtual Assistant.release.xcconfig */,
+				7802749079DDFDFBDD0EEFAC /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.debug.xcconfig */,
+				E9CFCABBF91D97A1000B05ED /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.release.xcconfig */,
+				DCA85C0FCF0DC98A1E593143 /* Pods-Rammy Virtual AssistantTests.debug.xcconfig */,
+				0F3A6708F3A18824FD53A086 /* Pods-Rammy Virtual AssistantTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCC8FFE8E6EFC40AB4DF5168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB27D8AB90887B0FCC7C7D /* Pods_Rammy_Virtual_Assistant.framework */,
+				463F5B4DB14790EA8B67D9EB /* Pods_Rammy_Virtual_Assistant_Rammy_Virtual_AssistantUITests.framework */,
+				C002B887D2C8957F44CF780B /* Pods_Rammy_Virtual_AssistantTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442CF0432A5FF01800124AE8 /* Rammy Virtual Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442CF0682A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual Assistant" */;
+			buildPhases = (
+				E9A6C096C1105E4E8C14EDA2 /* [CP] Check Pods Manifest.lock */,
+				442CF0402A5FF01800124AE8 /* Sources */,
+				442CF0412A5FF01800124AE8 /* Frameworks */,
+				442CF0422A5FF01800124AE8 /* Resources */,
+				CD0A0AA9D9D032B5CCA914C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rammy Virtual Assistant";
+			packageProductDependencies = (
+				44380DF72A600D82002BB88F /* Alamofire */,
+			);
+			productName = "Rammy Virtual Assistant";
+			productReference = 442CF0442A5FF01800124AE8 /* Rammy Virtual Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		442CF0532A5FF01B00124AE8 /* Rammy Virtual AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442CF06B2A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual AssistantTests" */;
+			buildPhases = (
+				944F65B3B0E8C0B787E7BA73 /* [CP] Check Pods Manifest.lock */,
+				442CF0502A5FF01B00124AE8 /* Sources */,
+				442CF0512A5FF01B00124AE8 /* Frameworks */,
+				442CF0522A5FF01B00124AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442CF0562A5FF01B00124AE8 /* PBXTargetDependency */,
+			);
+			name = "Rammy Virtual AssistantTests";
+			productName = "Rammy Virtual AssistantTests";
+			productReference = 442CF0542A5FF01B00124AE8 /* Rammy Virtual AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		442CF05D2A5FF01B00124AE8 /* Rammy Virtual AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442CF06E2A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual AssistantUITests" */;
+			buildPhases = (
+				8E98EA8DDB4D0EEADBBDFF73 /* [CP] Check Pods Manifest.lock */,
+				442CF05A2A5FF01B00124AE8 /* Sources */,
+				442CF05B2A5FF01B00124AE8 /* Frameworks */,
+				442CF05C2A5FF01B00124AE8 /* Resources */,
+				1C122A80E941B946B39BD3E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442CF0602A5FF01B00124AE8 /* PBXTargetDependency */,
+			);
+			name = "Rammy Virtual AssistantUITests";
+			productName = "Rammy Virtual AssistantUITests";
+			productReference = 442CF05E2A5FF01B00124AE8 /* Rammy Virtual AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442CF03C2A5FF01800124AE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					442CF0432A5FF01800124AE8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					442CF0532A5FF01B00124AE8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 442CF0432A5FF01800124AE8;
+					};
+					442CF05D2A5FF01B00124AE8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 442CF0432A5FF01800124AE8;
+					};
+				};
+			};
+			buildConfigurationList = 442CF03F2A5FF01800124AE8 /* Build configuration list for PBXProject "Rammy Virtual Assistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442CF03B2A5FF01800124AE8;
+			packageReferences = (
+				44380DF62A600D81002BB88F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 442CF0452A5FF01800124AE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442CF0432A5FF01800124AE8 /* Rammy Virtual Assistant */,
+				442CF0532A5FF01B00124AE8 /* Rammy Virtual AssistantTests */,
+				442CF05D2A5FF01B00124AE8 /* Rammy Virtual AssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442CF0422A5FF01800124AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442CF04F2A5FF01B00124AE8 /* Preview Assets.xcassets in Resources */,
+				442CF04C2A5FF01B00124AE8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF0522A5FF01B00124AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF05C2A5FF01B00124AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C122A80E941B946B39BD3E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E98EA8DDB4D0EEADBBDFF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		944F65B3B0E8C0B787E7BA73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rammy Virtual AssistantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD0A0AA9D9D032B5CCA914C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant/Pods-Rammy Virtual Assistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant/Pods-Rammy Virtual Assistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rammy Virtual Assistant/Pods-Rammy Virtual Assistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A6C096C1105E4E8C14EDA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rammy Virtual Assistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442CF0402A5FF01800124AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442CF04A2A5FF01800124AE8 /* ContentView.swift in Sources */,
+				44A09C2B2A602F5D00A46D74 /* HistoryView.swift in Sources */,
+				442CF0482A5FF01800124AE8 /* Rammy_Virtual_AssistantApp.swift in Sources */,
+				449C0E772A6004C900DE84CC /* ChatView.swift in Sources */,
+				44A09C2F2A60738E00A46D74 /* Synthesizer.swift in Sources */,
+				44A09C312A6073B600A46D74 /* SpeechRecognizer.swift in Sources */,
+				44A09C2D2A60302A00A46D74 /* Conversation.swift in Sources */,
+				442CF0752A5FFEA500124AE8 /* OpenAIService.swift in Sources */,
+				449C0E752A6002E300DE84CC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF0502A5FF01B00124AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CF05A2A5FF01B00124AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		442CF0562A5FF01B00124AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442CF0432A5FF01800124AE8 /* Rammy Virtual Assistant */;
+			targetProxy = 442CF0552A5FF01B00124AE8 /* PBXContainerItemProxy */;
+		};
+		442CF0602A5FF01B00124AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442CF0432A5FF01800124AE8 /* Rammy Virtual Assistant */;
+			targetProxy = 442CF05F2A5FF01B00124AE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		442CF0662A5FF01B00124AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		442CF0672A5FF01B00124AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442CF0692A5FF01B00124AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883F2028A55E8FDC37AC32DC /* Pods-Rammy Virtual Assistant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rammy Virtual Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe your speech. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your speech";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442CF06A2A5FF01B00124AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9E6FFE62706470CA722B33 /* Pods-Rammy Virtual Assistant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rammy Virtual Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe your speech. Audio recordings are discarded after transcription";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your speech";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		442CF06C2A5FF01B00124AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA85C0FCF0DC98A1E593143 /* Pods-Rammy Virtual AssistantTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rammy Virtual Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rammy Virtual Assistant";
+			};
+			name = Debug;
+		};
+		442CF06D2A5FF01B00124AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3A6708F3A18824FD53A086 /* Pods-Rammy Virtual AssistantTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rammy Virtual Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rammy Virtual Assistant";
+			};
+			name = Release;
+		};
+		442CF06F2A5FF01B00124AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7802749079DDFDFBDD0EEFAC /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rammy Virtual Assistant";
+			};
+			name = Debug;
+		};
+		442CF0702A5FF01B00124AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CFCABBF91D97A1000B05ED /* Pods-Rammy Virtual Assistant-Rammy Virtual AssistantUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP46TXR25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "saravana.Rammy-Virtual-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rammy Virtual Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442CF03F2A5FF01800124AE8 /* Build configuration list for PBXProject "Rammy Virtual Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442CF0662A5FF01B00124AE8 /* Debug */,
+				442CF0672A5FF01B00124AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442CF0682A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442CF0692A5FF01B00124AE8 /* Debug */,
+				442CF06A2A5FF01B00124AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442CF06B2A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442CF06C2A5FF01B00124AE8 /* Debug */,
+				442CF06D2A5FF01B00124AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442CF06E2A5FF01B00124AE8 /* Build configuration list for PBXNativeTarget "Rammy Virtual AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442CF06F2A5FF01B00124AE8 /* Debug */,
+				442CF0702A5FF01B00124AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44380DF62A600D81002BB88F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44380DF72A600D82002BB88F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44380DF62A600D81002BB88F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 442CF03C2A5FF01800124AE8 /* Project object */;
+}
